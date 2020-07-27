@@ -28,6 +28,7 @@ const schema = new Schema({
     },
   },
   name: {
+    type: String,
     required: true,
     validate(v, m) {
       return yup
@@ -36,6 +37,7 @@ const schema = new Schema({
     },
   },
   password: {
+    type: String,
     required: true,
     validate(v, m) {
       return yup
